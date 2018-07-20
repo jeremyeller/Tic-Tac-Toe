@@ -85,26 +85,27 @@ class Board
     @diagonal2.complete?
   end
   def position(num)
-    if num == 1
-      @array[0][0]
-    elsif num == 2
-      @array[0][1]
-    elsif num == 3
-      @array[0][2]
-    elsif num == 4
-      @array[1][0]
-    elsif num == 5
-      @array[1][1]
-    elsif num == 6
-      @array[1][2]
-    elsif num == 7
-      @array[2][0]
-    elsif num == 8
-      @array[2][1]
-    elsif num == 9
-      @array[2][2]
-    else
-      nil
+    case num
+      when 1
+        @array[0][0]
+      when 2
+        @array[0][1]
+      when 3
+        @array[0][2]
+      when 4
+        @array[1][0]
+      when 5
+        @array[1][1]
+      when 6
+        @array[1][2]
+      when 7
+        @array[2][0]
+      when 8
+        @array[2][1]
+      when 9
+        @array[2][2]
+      else
+        nil
     end
   end
 end
